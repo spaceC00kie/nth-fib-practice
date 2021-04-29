@@ -7,7 +7,6 @@ def nth_fib(n):
     # if 2 return 1
     if n == 2:
         return 1
-
     # otherwise sum fib n-1 and n-2
     return nth_fib(n - 1) + nth_fib(n - 2)
 
