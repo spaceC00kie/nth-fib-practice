@@ -1,10 +1,16 @@
 # given a number, return its value in the fib sequence
 
-#fib seq - every new number is the sum of the previous two numbers
+def nth_fib(n):
+    # if 1 return 0
+    if n == 1:
+        return 0
+    # if 2 return 1
+    if n == 2:
+        return 1
 
-def fib():
+    # otherwise sum fib n-1 and n-2
+    return nth_fib(n - 1) + nth_fib(n - 2)
 
-# if n = 1, return 0
-# if n = 2, return 1
 
-# find the previous two numbers (n - 1 and n - 2) and sum results
+print(nth_fib(100))
+
